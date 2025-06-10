@@ -15,4 +15,7 @@ func main() {
 	)
 
 	fmt.Println(var1, var2)
+
+	const lastName string = "Barreira"
+	fmt.Println(lastName)
 }
