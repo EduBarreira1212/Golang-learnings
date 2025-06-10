@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	var name string = "Eduardo"
+	var lastName string = "Aguiar"
 	age := 21
 
 	fmt.Println(name)
@@ -16,6 +17,10 @@ func main() {
 
 	fmt.Println(var1, var2)
 
-	const lastName string = "Barreira"
-	fmt.Println(lastName)
+	const middleName string = "Barreira"
+	fmt.Println(middleName)
+
+	name, lastName = lastName, name
+
+	fmt.Println(name, lastName)
 }
