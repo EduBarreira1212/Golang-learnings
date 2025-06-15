@@ -19,7 +19,7 @@ func main() {
 
 func write(text string, channel chan string) {
 	for i := 0; i < 5; i++ {
-		fmt.Println(text)
+		channel <- text
 		time.Sleep(time.Second)
 	}
 
