@@ -1,6 +1,9 @@
-package address
+package address_test
 
-import "testing"
+import (
+	"testing"
+	. "tests-introduction/address"
+)
 
 type TestingStruct struct {
 	addressForTest string
