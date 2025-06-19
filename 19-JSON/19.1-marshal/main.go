@@ -22,4 +22,17 @@ func main() {
 	}
 
 	fmt.Println(bytes.NewBuffer(user1JSON))
+
+	user2 := map[string]string{
+		"Name":     "Fulano",
+		"Email":    "fulano@gmail.com",
+		"Password": "12345",
+	}
+
+	user2JSON, err := json.Marshal(user2)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(bytes.NewBuffer(user2JSON))
 }
