@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h2 {
+            color: #c9c9c9; 
+            font-size:100px; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        marquee {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="text"> Home page </h2>
+
+    <button id="button">Click on me, {{.Name}}</button>
+
+    <script>
+        var button = document.getElementById("button");
+        button.onclick = function() {
+            alert("Button clicked!");
+
+            var text = document.getElementById("text");
+            text.innerText = "New text!";
+        }
+    </script>
+
+</body>
+</html>
