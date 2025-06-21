@@ -1,7 +1,3 @@
-Certainly! Here's the complete `README.md` file in **English**, with all content in a single Markdown document:
-
----
-
 ```markdown
 # Go Learnings
 
